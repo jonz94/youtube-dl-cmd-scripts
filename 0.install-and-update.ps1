@@ -26,6 +26,8 @@ if (!($?)) {
 Get-Command youtube-dl > $null 2>&1
 if (!($?)) {
     scoop install youtube-dl
+    scoop bucket add extras
+    scoop install vcredis2010
 }
 
 Get-Command scoop > $null 2>&1
