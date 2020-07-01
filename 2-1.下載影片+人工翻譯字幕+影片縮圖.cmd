@@ -5,11 +5,6 @@ setlocal EnableDelayedExpansion
 
 echo.
 SET /P url=輸入想要下載的 YouTube 影片連結，然後按下 Enter：
-IF [%url%] == [] (
-    echo.掰掰
-    pause
-    exit
-)
 
 echo.
 echo.開始下載 %url%
